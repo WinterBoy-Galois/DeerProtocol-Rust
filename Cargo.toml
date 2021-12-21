@@ -1,0 +1,16 @@
+[profile.release]
+panic = 'unwind'
+
+[workspace]
+exclude = [
+	"vendors/ring",
+	"vendors/webpki",
+	"substrate",
+]
+
+members = [
+    'node/*',
+    'pallets/*',
+]
+
+resolver = "2"
